@@ -1,0 +1,13 @@
+import React from 'react';
+
+interface TechBadgeProps {
+  label: string;
+}
+
+export function TechBadge({ label }: TechBadgeProps) {
+  return (
+    <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold text-accent-2 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+      {label}
+    </span>
+  );
+}
