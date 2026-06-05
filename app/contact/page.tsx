@@ -67,7 +67,7 @@ export default function ContactPage() {
 
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -97,22 +97,22 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-16">
             <AnimatedSection>
-              <SectionHeading 
-                title="Let's build something." 
+              <SectionHeading
+                title="Let's build something."
                 subtitle="Open to senior remote roles and freelance frontend projects. Response within 24 hours."
               />
-              
+
               <div className="mt-12 flex flex-col gap-6">
-                <a href="mailto:nikshadali@example.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
+                <a href="mailto:nikali92100@gmail.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-foreground">
                     <Mail size={20} />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground">Email</h3>
-                    <p>nikshadali@example.com</p>
+                    <p>nikali92100@gmail.com</p>
                   </div>
                 </a>
-                
+
                 <a href="https://linkedin.com/in/nikshadali" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-foreground">
                     <Linkedin size={20} />
@@ -123,13 +123,13 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="https://github.com/nikshad" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://github.com/nikshadali" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-foreground">
                     <Github size={20} />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground">GitHub</h3>
-                    <p>github.com/nikshad</p>
+                    <p>github.com/nikshadali</p>
                   </div>
                 </a>
               </div>

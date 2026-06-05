@@ -92,7 +92,7 @@ export function Hero() {
           {/* Social Proof Strip */}
           <motion.div variants={item} className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
             {[
-              { value: '5+', label: 'Years Experience' },
+              { value: '4+', label: 'Years Experience' },
               { value: '3', label: 'International Clients' },
               { value: '🇦🇺🇦🇪', label: 'AU & UAE' },
               { value: '✓', label: 'Meta Certified' },

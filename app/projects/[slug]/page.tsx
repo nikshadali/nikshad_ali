@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { AnimatedSection } from '@/components/shared/AnimatedSection';
 import { ExternalLink, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 type Props = {
@@ -98,10 +99,37 @@ export default async function ProjectDetail({ params }: Props) {
           </div>
         </section>
 
+        {/* Project Showcase / Screenshots */}
+        {project!.screenshots && project!.screenshots.length > 0 && (
+          <section className="pb-20 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+              <AnimatedSection>
+                <div className="flex flex-col gap-12">
+                  {project!.screenshots.map((img, i) => (
+                    <div 
+                      key={i} 
+                      className="relative w-full rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.4)] border border-slate-800/60 bg-slate-900/50 group flex justify-center items-center"
+                    >
+                      <Image
+                        src={img}
+                        alt={`${project!.title} interface ${i + 1}`}
+                        width={1920}
+                        height={1080}
+                        className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
+                        priority={i === 0}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+            </div>
+          </section>
+        )}
+
         {/* Case Study Content */}
         <section className="py-20" style={{ borderTop: '1px solid #1E293B' }}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-20">
-            
+
             <AnimatedSection>
               <h2 className="font-display text-2xl font-bold text-white mb-5">Overview</h2>
               <p className="text-lg leading-relaxed" style={{ color: '#94A3B8' }}>{project!.description}</p>
