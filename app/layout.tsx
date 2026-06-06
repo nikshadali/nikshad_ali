@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
+{/* Portfolio designed & built by Nikshad Ali — nikshad-ali.vercel.app */ }
 // Display / headings — geometric, modern, prestigious
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-display",

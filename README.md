@@ -21,3 +21,8 @@ Senior Frontend Engineer · React & Next.js · Meta Certified
 
 ## Connect
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/nikshadali)
+
+> ⚠️ **This is my personal portfolio.**
+> You're welcome to use it as inspiration,
+> but please do not copy and deploy it as your own.
+> Designed and built by [Nikshad Ali](https://nikshad-ali.vercel.app)
